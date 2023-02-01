@@ -1,0 +1,48 @@
+[
+	{
+		"id": "f48b900f-bf83-46a0-852b-3bbb229442a9",
+		"bikeStationId": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"bikeId": "262c91bd-ce00-4e62-aad6-dbc1bbfdcaa3"
+	},
+	{
+		"id": "9dbaecca-010d-4348-b0db-d89b9d91c5a9",
+		"bikeStationId": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"bikeId": "c4df2140-b497-4e11-829d-23b0dca22de6"
+	},
+	{
+		"id": "998cdba1-3925-44e0-9329-6b8e00450bb0",
+		"bikeStationId": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"bikeId": "e5e99272-a066-40cc-88a6-1b49db43f8ca"
+	},
+	{
+		"id": "1d8e1af5-d3ce-4383-aab5-d7a45bb75d7c",
+		"bikeStationId": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"bikeId": "c9c4ddef-3908-4c4a-83c9-6af27f86021d"
+	},
+	{
+		"id": "97656921-28c3-47cb-a523-0d017ffff440",
+		"bikeStationId": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"bikeId": "fb97f6ca-eecd-4d31-b3fd-bee5296f4626"
+	},
+	
+	{
+		"id": "8bd9413a-150f-4f0f-bbdc-2c447e91ef32",
+		"bikeStationId": "b88b141d-9904-4305-ac51-83e287c9bc71",
+		"bikeId": "c0383f4b-bb55-4f39-a0be-12501ff61d32"
+	},
+	{
+		"id": "180cf7c4-e71b-4532-8910-8ab1eb97bd20",
+		"bikeStationId": "b88b141d-9904-4305-ac51-83e287c9bc71",
+		"bikeId": "59c0e19f-1cdd-4c31-b720-e4495a96f206"
+	},
+	{
+		"id": "1efe9cac-3e9d-4776-9d40-e543e3494ecd",
+		"bikeStationId": "da975d64-b61e-4042-a3b3-1495d7341081",
+		"bikeId": "73477dcc-f130-4140-9939-1c3179f71f01"
+	},
+	{
+		"id": "1e9840fa-a0e8-4dfe-ae12-69de2bda6e0c",
+		"bikeStationId": "da975d64-b61e-4042-a3b3-1495d7341081",
+		"bikeId": "e8aaf6c5-be23-40c7-804b-ed7e9337dfe3"
+	}
+]

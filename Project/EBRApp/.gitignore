@@ -1,0 +1,11 @@
+/bin
+
+# Classpath
+*.classpath
+
+# Maven
+target/
+
+#Lib
+lib-jersey-client
+

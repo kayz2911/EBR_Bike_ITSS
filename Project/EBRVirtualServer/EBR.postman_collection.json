@@ -1,0 +1,1274 @@
+{
+	"info": {
+		"_postman_id": "cf6686a9-8aa1-43cb-9c79-ffe3f3ad65c3",
+		"name": "EBR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Subdivisions",
+			"item": [
+				{
+					"name": "Get provinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/provinces",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"provinces"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "92",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Thành phố",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/districts",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"districts"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "024",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Hà Giang",
+									"disabled": true
+								},
+								{
+									"key": "provinceCode",
+									"value": "02",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get wards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/wards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"wards"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "00037",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Phúc Tân",
+									"disabled": true
+								},
+								{
+									"key": "districtCode",
+									"value": "002",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bike stations",
+			"item": [
+				{
+					"name": "Get all bike stations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikestations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikestations"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "b88b141d-9904-4305-ac51-83e287c9bc71",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "03",
+									"disabled": true
+								},
+								{
+									"key": "addressId",
+									"value": "fb70cc20-279a-4b08-93d2-8d632fd882e7",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "9 Khuất Duy Tiến",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get bike station by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikestations/get-bike-station-by-id?id=b88b141d-9904-4305-ac51-83e287c9bc71",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikestations",
+								"get-bike-station-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "b88b141d-9904-4305-ac51-83e287c9bc71"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check bike station have enough empty bike dock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikestations/check-bike-station-have-enough-empty-bike-dock?bikeStationId=b88b141d-9904-4305-ac51-83e287c9bc71&=10",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikestations",
+								"check-bike-station-have-enough-empty-bike-dock"
+							],
+							"query": [
+								{
+									"key": "bikeStationId",
+									"value": "b88b141d-9904-4305-ac51-83e287c9bc71"
+								},
+								{
+									"key": null,
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"b88b141d-9904-4305-ac51-73e287c9bc71\",\r\n    \"name\": \"Bike station 00\",\r\n    \"numberOfDock\": 230,\r\n    \"address\": {\r\n        \"provinceCode\": \"01\",\r\n        \"districtCode\": \"006\",\r\n        \"wardCode\": \"00220\",\r\n        \"street\": \"256 Xã Đàn\",\r\n        \"GPSXCoordinate\": \"21.0126121\",\r\n        \"GPSYCoordinate\": \"105.8337852\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bikestations/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikestations",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"b88b141d-9904-4305-ac51-73e287c9bc71\",\r\n    \"name\": \"Bike station 00\",\r\n    \"numberOfDock\": 250,\r\n    \"addressId\": \"eeb981bc-18b8-4450-9a03-60c07e9ee131\",\r\n    \"address\": {\r\n        \"id\": \"eeb981bc-18b8-4450-9a03-60c07e9ee131\",\r\n        \"provinceCode\": \"01\",\r\n        \"districtCode\": \"006\",\r\n        \"wardCode\": \"00220\",\r\n        \"street\": \"256 Xã Đàn\",\r\n        \"GPSXCoordinate\": \"21.0126121\",\r\n        \"GPSYCoordinate\": \"105.8337852\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bikestations/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikestations",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bike docks",
+			"item": [
+				{
+					"name": "Get all bike docks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikedocks",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikedocks"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "998cdba1-3925-44e0-9329-6b8e00450bb0",
+									"disabled": true
+								},
+								{
+									"key": "bikeStationId",
+									"value": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+									"disabled": true
+								},
+								{
+									"key": "bikeId",
+									"value": "c0383f4b-bb55-4f39-a0be-12501ff61d32",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"998cdba1-3925-44e0-9329-6b8e01450aa0\",\r\n    \"bikeStationId\": \"7f7388f9-2d63-4ab2-b270-daaa0699e80e\",\r\n    \"bikeId\": \"e5e99272-a068-41cc-88a6-1b49db43f8ca\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bikedocks/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikedocks",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"998cdba1-3925-44e0-9329-6b8e01450aa0\",\r\n    \"bikeStationId\": \"da975d64-b61e-4042-a3b3-1495d7341081\",\r\n    \"bikeId\": \"e5e99272-a068-41cc-88a6-1b49db43f8ca\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bikedocks/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikedocks",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bikes",
+			"item": [
+				{
+					"name": "RegularBike",
+					"item": [
+						{
+							"name": "Get All Regular Bikes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/regularbikes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"regularbikes"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "262c91bd-ce00-4e62-aad6-dbc1bbfdcaa3",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "01",
+											"disabled": true
+										},
+										{
+											"key": "licensePlate",
+											"value": "29-B-262c91bd",
+											"disabled": true
+										},
+										{
+											"key": "producer",
+											"value": "Windmill factory",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\" :\"regularbike\",\r\n    \"id\": \"262c91bd-ce00-4e62-aad6-dbc1bbfdcaa4\",\r\n    \"name\": \"Regular bike 00\",\r\n    \"weight\": \"5.6\",\r\n    \"licensePlate\": \"29-B-262c91bd\",\r\n    \"manufacturingDate\": \"26/02/2019\",\r\n    \"producer\": \"Windmill factory\",\r\n    \"cost\": \"1000000\",\r\n    \"description\": \"\",\r\n    \"status\": \"AVAILABLE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/regularbikes/add",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"regularbikes",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"regularbike\",\r\n    \"id\": \"262c91bd-ce00-4e62-aad6-dbc1bbfdcaa4\",\r\n    \"name\": \"Regular bike 00\",\r\n    \"weight\": \"6.5\",\r\n    \"licensePlate\": \"29-B-262c91bd\",\r\n    \"manufacturingDate\": \"26/02/2019\",\r\n    \"producer\": \"Windmill factory\",\r\n    \"cost\": \"1000000\",\r\n    \"description\": \"\",\r\n    \"status\": \"AVAILABLE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/regularbikes/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"regularbikes",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EBike",
+					"item": [
+						{
+							"name": "Get All EBikes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/ebikes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"ebikes"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "e8aaf6c5-be23-40c7-804b-ed7e9337dfe3",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "01",
+											"disabled": true
+										},
+										{
+											"key": "licensePlate",
+											"value": "29-EB-e8aaf6c5",
+											"disabled": true
+										},
+										{
+											"key": "producer",
+											"value": "Tesla Coorp",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"ebike\",\r\n    \"id\": \"e8aaf6c5-be23-40c7-804b-ed7e9337dxe3\",\r\n    \"name\": \"EBike 00\",\r\n    \"weight\": \"5.6\",\r\n    \"licensePlate\": \"29-EB-e8aaf6c5\",\r\n    \"manufacturingDate\": \"8/6/2015\",\r\n    \"producer\": \"Tesla Coorp\",\r\n    \"cost\": \"10000000\",\r\n    \"description\": \"\",\r\n    \"batteryPercentage\": \"100\",\r\n    \"loadCycles\": \"1029\",\r\n    \"estimatedUsageTimeRemaining\": \"45\",\r\n    \"status\": \"AVAILABLE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/ebikes/add",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"ebikes",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"regularbike\",\r\n    \"id\": \"262c91bd-ce00-4e62-aad6-dbc1bbfdcaa4\",\r\n    \"name\": \"Regular bike 00\",\r\n    \"weight\": \"6.5\",\r\n    \"licensePlate\": \"29-B-262c91bd\",\r\n    \"manufacturingDate\": \"26/02/2019\",\r\n    \"producer\": \"Windmill factory\",\r\n    \"cost\": \"1000000\",\r\n    \"description\": \"\",\r\n    \"status\": \"AVAILABLE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/ebikes/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"ebikes",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TwinBike",
+					"item": [
+						{
+							"name": "Get All Twin Bikes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/twinbikes",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"twinbikes"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "59c0e19f-1cdd-4c31-b720-e4495a96f206",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "01",
+											"disabled": true
+										},
+										{
+											"key": "licensePlate",
+											"value": "29-TB-59c0e19f",
+											"disabled": true
+										},
+										{
+											"key": "producer",
+											"value": "Rose Hips factory",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"twinbike\",\r\n    \"id\": \"59c0e19f-1cdd-4c31-b720-e4495a96f106\",\r\n    \"name\": \"Twin bike 00\",\r\n    \"weight\": \"7.8\",\r\n    \"licensePlate\": \"29-TB-59c0e19f\",\r\n    \"manufacturingDate\": \"05/09/2019\",\r\n    \"producer\": \"Rose Hips factory\",\r\n    \"cost\": \"500000\",\r\n    \"description\": \"\",\r\n    \"status\": \"AVAILABLE\"\r\n},",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/twinbikes/add",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"twinbikes",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"twinbike\",\r\n    \"id\": \"59c0e19f-1cdd-4c31-b720-e4495a96f106\",\r\n    \"name\": \"Twin bike 00\",\r\n    \"weight\": \"8.7\",\r\n    \"licensePlate\": \"29-TB-59c0e19f\",\r\n    \"manufacturingDate\": \"05/09/2019\",\r\n    \"producer\": \"Rose Hips factory\",\r\n    \"cost\": \"500000\",\r\n    \"description\": \"\",\r\n    \"status\": \"AVAILABLE\"\r\n},",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/twinbikes/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"twinbikes",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get All Bikes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikes",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Bikes By Bike Station Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikes/get-bikes-by-bike-station-id?bikeStationId=7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikes",
+								"get-bikes-by-bike-station-id"
+							],
+							"query": [
+								{
+									"key": "bikeStationId",
+									"value": "7f7388f9-2d63-4ab2-b270-daaa0699e80e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bike By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bikes/get-bike-by-id?id=262c91bd-ce00-4e62-aad6-dbc1bbfdcaa3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bikes",
+								"get-bike-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "262c91bd-ce00-4e62-aad6-dbc1bbfdcaa3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Get all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/customers",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "Khang",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Phan",
+									"disabled": true
+								},
+								{
+									"key": "phoneNumber",
+									"value": "%2b1%20219%2D949%2D7161",
+									"description": "+1 219-949-7161",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get customer by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/customers/get-customer-by-id?id=4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"customers",
+								"get-customer-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4de09c76-5eba-44cd-a28d-7be87d5c8c03"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"4de09c72-5eba-45cd-a28d-7be87d5c8c03\",\r\n    \"firstName\": \"Trinh\",\r\n    \"lastName\": \"Nguyễn Trung\",\r\n    \"phoneNumber\": \"+1 483-262-2710\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/customers/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"customers",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"4de09c72-5eba-45cd-a28d-7be87d5c8c03\",\r\n    \"firstName\": \"Trinh\",\r\n    \"lastName\": \"Nguyễn Trung\",\r\n    \"phoneNumber\": \"+1 483-262-2715\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/customers/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"customers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Get card by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/get-card-by-id?id=f84f2e4f-4150-4889-84b8-06a2269e6455",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								"get-card-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "f84f2e4f-4150-4889-84b8-06a2269e6455"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get card by customer id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/get-card-by-customer-id?customerId=06a9ea28-2997-401d-b7a5-491b3f14f768",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								"get-card-by-customer-id"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "06a9ea28-2997-401d-b7a5-491b3f14f768"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"f84f3e4e-4140-4889-84b7-06a2269e6455\",\r\n    \"cardholderName\": \"NGUYEN TRUNG TRINH\",\r\n    \"cardNumber\": \"3088630179182414\",\r\n    \"issuingBank\": \"JCB\",\r\n    \"expirationDate\": \"01/12/2033\",\r\n    \"CVC\": 922\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/cards/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"f84f3e4e-4140-4889-84b7-06a2269e6455\",\r\n    \"cardholderName\": \"NGUYEN TRUNG TRINH\",\r\n    \"cardNumber\": \"3088630179182415\",\r\n    \"issuingBank\": \"JCB\",\r\n    \"expirationDate\": \"01/12/2033\",\r\n    \"CVC\": 922\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/cards/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "69122546-97e4-487a-9b12-eccaff4f43b5",
+									"disabled": true
+								},
+								{
+									"key": "customerId",
+									"value": "4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+									"disabled": true
+								},
+								{
+									"key": "bikeId",
+									"value": "3dbaae20-ab46-4044-abdd-2e9940c020fb",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "APPROVED",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get orders by customer id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders/get-orders-by-customer-id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"get-orders-by-customer-id"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get renting order by customer id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders/get-renting-order-by-customer-id?customerId=4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"get-renting-order-by-customer-id"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "4de09c76-5eba-44cd-a28d-7be87d5c8c03"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get order by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders/get-order-by-id?id=69122546-97e4-487a-9b12-eccaff4f43b5",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"get-order-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "69122546-97e4-487a-9b12-eccaff4f43b5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get order by bike id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/orders/get-order-by-bike-id?bikeId=3dbaae20-ab46-4044-abdd-2e9940c020fb",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"get-order-by-bike-id"
+							],
+							"query": [
+								{
+									"key": "bikeId",
+									"value": "3dbaae20-ab46-4044-abdd-2e9940c020fb"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add order with exist user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"860a33bx-a1cb-451f-8b44-b3fc8eaa572a\",\r\n    \"createdTime\": \"30/12/2021 12:55:50\",\r\n    \"updatedTime\": \"30/12/2021 13:55:50\",\r\n    \"customerId\": \"3245412b-6a33-4330-a644-b423c29e843r\",\r\n    \"bikeId\": \"73477dcc-f130-4140-9939-1c3179f71f01\",\r\n    \"status\": \"APPROVED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add order with non exist user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"860t33bx-r1cb-451g-8e44-b3xc8ebb572a\",\r\n    \"createdTime\": \"23/12/2021\",\r\n    \"updatedTime\": \"23/12/2021\",\r\n    \"bikeId\": \"c9c4ddef-3908-4c4a-83c9-6af27f86021d\",\r\n    \"status\": \"APPROVED\",\r\n    \"customerInfo\": {\r\n        \"id\": \"3245412b-6a97-4330-b644-r423k78e843r\",\r\n        \"firstName\": \"Đức\",\r\n        \"lastName\": \"Nguyễn Hữu\",\r\n        \"phoneNumber\": \"+1 354-542-7908\",\r\n        \"card\": {\r\n            \"id\": \"k89dc336-cef4-4d3a-a1cd-fac9de210fvb\",\r\n            \"cardholderName\": \"NGUYEN HUU DUC\",\r\n            \"cardNumber\": \"5423099219111453\",\r\n            \"issuingBank\": \"MasterCard\",\r\n            \"expirationDate\": \"01/03/2025\",\r\n            \"CVC\": \"523\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"860a33bx-a1cb-451f-8b44-b3fc8eaa572a\",\r\n    \"customerId\": \"3245412b-6a33-4330-a644-b423c29e843r\",\r\n    \"bikeId\": \"73477dcc-f130-4140-9939-1c3179f71f01\",\r\n    \"status\": \"SUCCEED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/orders/update/7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"orders",
+								"update",
+								"7f7388f9-2d63-4ab2-b270-daaa0699e80e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bank services",
+			"item": [
+				{
+					"name": "Check balance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"a52dc216-cdf3-4d3a-a1cd-fac9de210fvb\",\r\n    \"cardholderName\": \"TRAN TU\",\r\n    \"cardNumber\": \"5423099212341453\",\r\n    \"issuingBank\": \"MasterCard\",\r\n    \"expirationDate\": \"01/08/2024 03:41:08\",\r\n    \"CVC\": \"422\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bank/check-balance",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bank",
+								"check-balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Withdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardholderName\": \"PHAN HUY THANG\",\r\n    \"cardNumber\": \"376446804259043\",\r\n    \"issuingBank\": \"American Express\",\r\n    \"expirationDate\": \"01/06/2026 03:41:08\",\r\n    \"CVC\": \"338\",\r\n    \"balance\": \"10000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bank/withdraw/10000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bank",
+								"withdraw",
+								"10000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Topup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardholderName\": \"PHAN HUY THANG\",\r\n    \"cardNumber\": \"376446804259043\",\r\n    \"issuingBank\": \"American Express\",\r\n    \"expirationDate\": \"01/06/2026 03:41:08\",\r\n    \"CVC\": \"338\",\r\n    \"balance\": \"10000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bank/topup/10000",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bank",
+								"topup",
+								"10000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

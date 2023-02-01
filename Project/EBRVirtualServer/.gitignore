@@ -1,0 +1,13 @@
+/bin
+
+
+# Classpath
+*.classpath
+
+# Maven
+target/
+
+# Library
+lib/
+
+

@@ -1,0 +1,92 @@
+[
+	{
+		"id": "3d262e73-cf1b-45c2-bebe-9c0fc1a89cf7",
+		"provinceCode": "01",
+		"districtCode": "006",
+		"wardCode": "00232",
+		"street": "1 Giải Phóng",
+		"GPSXCoordinate": "21.0071015",
+		"GPSYCoordinate": "105.8391644"
+	},
+	{
+		"id": "b19f03fc-eea0-480e-bbf9-c63f78dbc8c2",
+		"provinceCode": "01",
+		"districtCode": "006",
+		"wardCode": "00220",
+		"street": "256 Xã Đàn",
+		"GPSXCoordinate": "21.0126121",
+		"GPSYCoordinate": "105.8337852"
+	},
+	{
+		"id": "90233037-4387-46d7-a688-92c42bea2080",
+		"provinceCode": "01",
+		"districtCode": "007",
+		"wardCode": "00283",
+		"street": "512 Minh Khai",
+		"GPSXCoordinate": "20.9983894",
+		"GPSYCoordinate": "105.8666174"
+	},
+	{
+		"id": "fb70cc20-279a-4b08-93d2-8d632fd882e7",
+		"provinceCode": "01",
+		"districtCode": "005",
+		"wardCode": "00175",
+		"street": "23 Trần Duy Hưng",
+		"GPSXCoordinate": "21.014146",
+		"GPSYCoordinate": "105.8017131"
+	},
+	{
+		"id": "07c2355f-be07-4650-a2a2-08c0bb805bd4",
+		"provinceCode": "01",
+		"districtCode": "009",
+		"wardCode": "00367",
+		"street": "9 Khuất Duy Tiến",
+		"GPSXCoordinate": "20.9947089",
+		"GPSYCoordinate": "105.7980532"
+	},
+	{
+		"id": "5d16eb8c-a857-4693-95df-200daf090d3b",
+		"provinceCode": "01",
+		"districtCode": "006",
+		"wardCode": "00199",
+		"street": "446 Đường Láng",
+		"GPSXCoordinate": "21.009402",
+		"GPSYCoordinate": "105.8111383"
+	},
+	{
+		"id": "b6141fad-50e4-4882-9fc3-07c4d883647f",
+		"provinceCode": "01",
+		"districtCode": "005",
+		"wardCode": "00172",
+		"street": "100 Nguyễn Khang",
+		"GPSXCoordinate": "21.0229117",
+		"GPSYCoordinate": "105.7962286"
+	},
+	{
+		"id": "65ea8af5-b615-4932-9f23-0437a12cbe2e",
+		"provinceCode": "01",
+		"districtCode": "006",
+		"wardCode": "00187",
+		"street": "23 Chùa Láng",
+		"GPSXCoordinate": "21.0230165",
+		"GPSYCoordinate": "105.8056401"
+	},
+	{
+		"id": "a938f9f8-4641-473b-8cb8-63e4bb1943dd",
+		"provinceCode": "01",
+		"districtCode": "006",
+		"wardCode": "00190",
+		"street": "17 Đê La Thành",
+		"GPSXCoordinate": "21.02103",
+		"GPSYCoordinate": "105.8239393"
+	},
+	{
+		"id": "8008ceff-3654-473f-baf6-8c055841860e",
+		"provinceCode": "01",
+		"districtCode": "005",
+		"wardCode": "00169",
+		"street": "90 Cầu Giấy",
+		"GPSXCoordinate": "21.0315803",
+		"GPSYCoordinate": "105.7979354"
+	}
+]

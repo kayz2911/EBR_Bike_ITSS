@@ -1,0 +1,50 @@
+[
+	{
+		"type": "regularbike",
+		"id": "262c91bd-ce00-4e62-aad6-dbc1bbfdcaa3",
+		"name": "Regular bike 01",
+		"weight": "5.6",
+		"licensePlate": "29-B-262c91bd",
+		"manufacturingDate": "26/02/2019 03:41:08",
+		"producer": "Windmill factory",
+		"cost": "1000000",
+		"description": "",
+		"status": "AVAILABLE"
+	},
+	{
+		"type": "regularbike",
+		"id": "c4df2140-b497-4e11-829d-23b0dca22de6",
+		"name": "Regular bike 02",
+		"weight": "8.5",
+		"licensePlate": "29-B-c4df2140",
+		"manufacturingDate": "04/02/2021 03:41:08",
+		"producer": "Windmill factory",
+		"cost": "5600000",
+		"description": "",
+		"status": "HOLDING"
+	},
+	{
+		"type": "regularbike",
+		"id": "0d8c32d9-926c-4144-928f-c2407ff3f96c",
+		"name": "Regular bike 03",
+		"weight": "6.7",
+		"licensePlate": "29-B-0d8c32d9",
+		"manufacturingDate": "08/03/2009 03:41:08",
+		"producer": "Windmill factory",
+		"cost": "3400000",
+		"description": "",
+		"status": "AVAILABLE"
+	},
+	{
+		"type": "regularbike",
+		"id": "491284ea-a12c-4e1f-9fc0-670235f67d58",
+		"name": "Regular bike 04",
+		"weight": "9.3",
+		"licensePlate": "29-B-491284ea",
+		"manufacturingDate": "04/09/2018 03:41:08",
+		"producer": "Windmill factory",
+		"cost": "7000000",
+		"description": "",
+		"status": "RENTED"
+	}
+]

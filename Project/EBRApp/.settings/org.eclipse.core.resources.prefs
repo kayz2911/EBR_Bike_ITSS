@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/ebr/components/gui/bike/UserBikeSinglePane.java=UTF-8
+encoding//src/com/ebr/components/gui/bike/UserRentedBike.java=UTF-8
+encoding//src/com/ebr/serverapi/test/bikestation/BikeDockApiTest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/bikestation/BikeStationApiTest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/customer/CardAPITest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/customer/CustomerAPITest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/order/OrderApiTest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/subdivision/DistrictApiTest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/subdivision/ProvinceApiTest.java=UTF-8
+encoding//src/com/ebr/serverapi/test/subdivision/WardApiTest.java=UTF-8

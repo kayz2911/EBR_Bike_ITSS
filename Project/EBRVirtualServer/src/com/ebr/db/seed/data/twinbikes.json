@@ -1,0 +1,38 @@
+[
+	{
+		"type": "twinbike",
+		"id": "59c0e19f-1cdd-4c31-b720-e4495a96f206",
+		"name": "Twin bike 01",
+		"weight": "7.8",
+		"licensePlate": "29-TB-59c0e19f",
+		"manufacturingDate": "05/09/2019 03:41:08",
+		"producer": "Rose Hips factory",
+		"cost": "500000",
+		"description": "",
+		"status": "AVAILABLE"
+	},
+	{
+		"type": "twinbike",
+		"id": "fb97f6ca-eecd-4d31-b3fd-bee5296f4626",
+		"name": "Twin bike 02",
+		"weight": "9.3",
+		"licensePlate": "29-TB-fb97f6ca",
+		"manufacturingDate": "09/07/2016 03:41:08",
+		"producer": "Rose Hips factory",
+		"cost": "2800000",
+		"description": "",
+		"status": "AVAILABLE"
+	},
+	{
+		"type": "twinbike",
+		"id": "c0383f4b-bb55-4f39-a0be-12501ff61d32",
+		"name": "Twin bike 03",
+		"weight": "8.2",
+		"licensePlate": "29-TB-c0383f4b",
+		"manufacturingDate": "03/03/2014 03:41:08",
+		"producer": "Rose Hips factory",
+		"cost": "1700000",
+		"description": "",
+		"status": "AVAILABLE"
+	}
+]

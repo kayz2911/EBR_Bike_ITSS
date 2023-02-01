@@ -1,0 +1,42 @@
+[
+	{
+		"id": "098548a1-50f8-4f54-8da7-e281fe231e55",
+		"cardholderName": "PHAN HUY THANG",
+		"cardNumber": "376446804259043",
+		"issuingBank": "American Express",
+		"expirationDate": "01/06/2026 03:41:08",
+		"CVC": "338"
+	},
+	{
+		"id": "f84f2e4f-4150-4889-84b8-06a2269e6455",
+		"cardholderName": "DO HUY HIEU",
+		"cardNumber": "3088230189192414",
+		"issuingBank": "JCB",
+		"expirationDate": "01/03/2028 03:41:08",
+		"CVC": "943"
+	},
+	{
+		"id": "ecb24c5e-6f26-4fdb-9aa7-e260b0e0f58c",
+		"cardholderName": "NGUYEN TRONG KHANG",
+		"cardNumber": "4929296116773627",
+		"issuingBank": "Visa",
+		"expirationDate": "01/04/2029 03:41:08",
+		"CVC": "476"
+	},
+	{
+		"id": "a52dc616-cdf4-4d3a-a1cd-fac94e210fd5",
+		"cardholderName": "NGUYEN THI THU THAO",
+		"cardNumber": "5423035814341453",
+		"issuingBank": "MasterCard",
+		"expirationDate": "01/05/2025 03:41:08",
+		"CVC": "553"
+	},
+	{
+		"id": "a52dc216-cdf3-4d3a-a1cd-fac9de210fvb",
+		"cardholderName": "TRAN TU",
+		"cardNumber": "5423099212341453",
+		"issuingBank": "MasterCard",
+		"expirationDate": "01/08/2024 03:41:08",
+		"CVC": "422"
+	}
+]

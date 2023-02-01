@@ -1,0 +1,62 @@
+[
+	{
+		"id": "7f7388f9-2d63-4ab2-b270-daaa0699e80e",
+		"name": "Bike station 01",
+		"addressId": "3d262e73-cf1b-45c2-bebe-9c0fc1a89cf7",
+		"numberOfDock": 500
+	},
+	{
+		"id": "b88b141d-9904-4305-ac51-83e287c9bc71",
+		"name": "Bike station 02",
+		"addressId": "b19f03fc-eea0-480e-bbf9-c63f78dbc8c2",
+		"numberOfDock": 230
+	},
+	{
+		"id": "da975d64-b61e-4042-a3b3-1495d7341081",
+		"name": "Bike station 03",
+		"addressId": "90233037-4387-46d7-a688-92c42bea2080",
+		"numberOfDock": 470
+	},
+	{
+		"id": "afd680dc-ec4f-41e4-923b-853409746750",
+		"name": "Bike station 04",
+		"addressId": "fb70cc20-279a-4b08-93d2-8d632fd882e7",
+		"numberOfDock": 550
+	},
+	{
+		"id": "6e66c6c1-52b3-4624-a54e-23650ee7f7a6",
+		"name": "Bike station 05",
+		"addressId": "07c2355f-be07-4650-a2a2-08c0bb805bd4",
+		"numberOfDock": 650
+	},
+	{
+		"id": "c33aae00-e92d-4447-b61b-fb3fe5156d7a",
+		"name": "Bike station 06",
+		"addressId": "5d16eb8c-a857-4693-95df-200daf090d3b",
+		"numberOfDock": 680
+	},
+	{
+		"id": "3b9007ec-d0c2-4dd9-a697-6c85122bdccd",
+		"name": "Bike station 07",
+		"addressId": "b6141fad-50e4-4882-9fc3-07c4d883647f",
+		"numberOfDock": 720
+	},
+	{
+		"id": "e42677e6-43ba-48b7-9582-82c98072a7e0",
+		"name": "Bike station 08",
+		"addressId": "65ea8af5-b615-4932-9f23-0437a12cbe2e",
+		"numberOfDock": 770
+	},
+	{
+		"id": "e31c247e-0c2b-4a5d-af63-ef18e7685489",
+		"name": "Bike station 09",
+		"addressId": "a938f9f8-4641-473b-8cb8-63e4bb1943dd",
+		"numberOfDock": 890
+	},
+	{
+		"id": "643758a5-2828-4b43-8193-b8631beed4bd",
+		"name": "Bike station 10",
+		"addressId": "8008ceff-3654-473f-baf6-8c055841860e",
+		"numberOfDock": 1000
+	}
+]

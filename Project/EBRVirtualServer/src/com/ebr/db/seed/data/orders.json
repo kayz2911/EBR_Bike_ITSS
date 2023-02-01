@@ -1,0 +1,34 @@
+[
+	{
+		"id": "69122546-97e4-487a-9b12-eccaff4f43b5",
+		"createdTime": "22/12/2021 03:41:08",
+		"updatedTime": "23/12/2021 03:41:08",
+		"customerId": "06a9ea28-2997-401d-b7a5-491b3f14f768",
+		"bikeId": "e5e99272-a066-40cc-88a6-1b49db43f8ca",
+		"status": "SUCCEED"
+	},
+	{
+		"id": "fce63a03-7521-4a38-8397-56466962b52a",
+		"createdTime": "20/12/2021 03:41:08",
+		"updatedTime": "20/12/2021 07:41:08",
+		"customerId": "632752f3-03cc-4dc8-bb17-f1db77966119",
+		"bikeId": "c4df2140-b497-4e11-829d-23b0dca22de6",
+		"status": "REQUESTING"
+	},
+	{
+		"id": "860a33ba-a0cb-451f-8b44-b3fc8eaa572a",
+		"createdTime": "24/12/2021 03:41:08",
+		"updatedTime": "25/12/2021 08:41:08",
+		"customerId": "4de09c76-5eba-44cd-a28d-7be87d5c8c03",
+		"bikeId": "491284ea-a12c-4e1f-9fc0-670235f67d58",
+		"status": "APPROVED"
+	},
+	{
+		"id": "8b8074c6-a880-4a0e-a594-a6cc5e1c533a",
+		"createdTime": "23/11/2021 03:41:08",
+		"updatedTime": "23/11/2021 10:41:08",
+		"customerId": "5643450b-6a49-4330-a644-b423c29e842a",
+		"bikeId": "3dbaae20-ab46-4044-abdd-2e9940c020fb",
+		"status": "APPROVED"
+	}
+]
